@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+        <div class="back-img">
+            <div class="steps">
+
+                <div class="step-no">1</div>
+                <div class="step-desc">
+                    <p>STEP 1</p>
+                    <h4>YOUR INFO</h4>
+                </div>
+                <div class="step-no">2</div>
+                <div class="step-desc">
+                    <p>STEP 2</p>
+                    <h4>SELECT PLAN</h4>
+                </div>
+                <div class="step-no">3</div>
+                <div class="step-desc">
+                    <p>STEP 3</p>
+                    <h4>ADD ONS</h4>
+                </div>
+                <div class="step-no">4</div>
+                <div class="step-desc">
+                    <p>STEP 4</p>
+                    <h4>SUMMARY</h4>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form">
+            <form action="alert:submitted successfully" method="post">
+
+
+                <div class="tab" id="step-1">
+
+                    <h2>Personal info</h2>
+                    <p>Please provide your name, email and phone no.</p>
+
+                    <label for="name">
+                        Name
+                        <span id="name-check"></span>
+                    </label>
+                    <br>
+                    <input type="text" id="name" placeholder="e.g. Vanessa">
+                    <br>
+                    <label for="email">
+                        E-mail
+                        <span id="email-check"></span>
+                    </label>
+                    <br>
+                    <input type="email" name="" id="email" placeholder="e.g. vanessa@gmaillcom">
+                    <br>
+                    <label for="tel">
+                        Phone No.
+                        <span id="tel-check"></span>
+                    </label>
+                    <br>
+                    <input type="tel" name="" id="tel" placeholder="e.g. 1234567890">
+
+                </div>
+
+
+                <div class="tab" id="step-2">
+
+                    <h2>Select your plan</h2>
+                    <p>Choose one of the plans.</p>
+
+                    <div id="plans">
+
+                        <button type="button" class="price" id="Arcade" onclick="priceRetriver('Arcade', 9)">
+                            <img src="assets/images/icon-arcade.svg" alt="" srcset="" class="price-img">
+                            <h3>Arcade</h3>
+                            <p>$9/mo</p>
+                        </button>
+                        <button type="button" class="price" id="Advanced" onclick="priceRetriver('Advanced', 12)">
+                            <img src="assets/images/icon-advanced.svg" alt="" srcset="" class="price-img">
+                            <h3>Advanced</h3>
+                            <p>$12/mo</p>
+                        </button>
+                        <button type="button" class="price" id="Pro" onclick="priceRetriver('Pro', 15)">
+                            <img src="assets/images/icon-pro.svg" alt="" srcset="" class="price-img">
+                            <h3>Pro</h3>
+                            <p>$15/mo</p>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="tab" id="step-3">
+
+                    <h2>Pick add-ons</h2>
+                    <p>Add ons help enhance your gaming experience.</p>
+
+                    <div id="check-step">
+
+                        <div role="button" class="check-step-3" id="online-services">
+
+                            <div>
+                                <input type="checkbox" name="online-services" class="add-checkbox" id="online-services-box">
+                            </div>
+                            <div class="middle-of-addons">
+                                <h3>Online Services</h3>
+                                <p>Access to multiplayer games</p>
+                            </div>
+                            <div class="addon-price">
+                                $1/mo
+                            </div>
+
+                        </div>
+                        <div role="button" class="check-step-3" id="larger-storage">
+                            
+                            <div>
+                                <input type="checkbox" name="larger-storage" class="add-checkbox" id="larger-storage-box">
+                            </div>
+                            <div class="middle-of-addons">
+                                <h3>Larger Storage</h3>
+                                <p>Extra of 1TB cloud storage</p>
+                            </div>
+                            <div class="addon-price">
+                                $2/mo
+                            </div>
+
+                        </div>
+                        <div role="button" class="check-step-3" id="customisable-profile">
+                            
+                            <div>
+                                <input type="checkbox" name="customisable-profile" class="add-checkbox" id="customisable-profile-box">
+                            </div>
+                            <div class="middle-of-addons">
+                                <h3>Customisable Profile</h3>
+                                <p>Custom theme on your profile</p>
+                            </div>
+                            <div class="addon-price">
+                                $2/mo
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="tab" id="step-4">
+
+                    <h2>Finishing Up</h2>
+                    <p>Doublle-check everything looks OK before confirming.</p>
+
+                    <div>
+                        <h5>
+                        </h5>
+                        <p id="plan-price"></p>
+                        <hr>
+                        <p class="add-on"></p>
+                        <p class="addon-price-final"></p>
+                        <p class="add-on"></p>
+                        <p class="addon-price-final"></p>
+                        <p class="add-on"></p>
+                        <p class="addon-price-final"></p>
+                    </div>
+                    <p class="total">
+                        Total(per month)
+                    </p>
+                    <p class="total-price"></p>
+
+                </div>
+
+                <div class="tab" id="step-5">
+                    <img src="assets/images/icon-thank-you.svg" alt="" srcset="">
+                    <h1>Thank you!</h1>
+                    <p>Thanks for confirming your subscription! We hope you have fun usin our platform. If you ever need support, please feel free to email us at support@loremgaming.com</p>
+                </div>
+            </form>
+
+            <div id="btns">
+                <button id="prev">
+                    Go Back
+                </button>
+                <button id="next">
+                    Next Step
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- js-file -->
+    <script src="index.js"></script>
+</body>
+
+</html>

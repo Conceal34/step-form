@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+p {
+    color: hsl(231, 11%, 63%);
+}
+
+h2 {
+    color: hsl(243, 100%, 62%);
+    font-size: 36px;
+}
+
+main {
+    margin: 10px;
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-radius: 8px;
+}
+
+label {
+    color: hsl(243, 100%, 62%);
+}
+
+label > span {
+    float: right;
+    color: hsl(354, 84%, 57%);
+}
+
+input {
+    all: unset;
+    padding: 7px 14px 2px;
+    width: 100%;
+    margin-bottom: 2.8vh;
+    border: solid 1.8px hsl(231, 11%, 63%);
+    border-radius: 4px;
+}
+input[type="checkbox"] {
+    all: revert;
+    margin-bottom: 2.8vh;
+    border: solid 1.8px hsl(231, 11%, 63%);
+    border-radius: 4px;
+    height: 30px;
+    width: 30px;
+    accent-color: hsl(243, 100%, 62%);
+}
+input:focus {
+    border-color: hsl(243, 100%, 62%);
+}
+.error-input {
+    border-color: hsl(354, 84%, 57%);
+}
+
+button {
+    all: unset;
+    padding: 8px 10px;
+    border: solid 1px hsl(213, 96%, 18%);
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 4px;
+    color: hsl(231, 100%, 99%);
+    cursor: pointer;
+}
+button:focus, button:hover {
+    background-color: black;
+}
+
+#next {
+    float: right;
+}
+#next:hover, #next:focus {
+    background-color: hsl(243, 100%, 62%);
+    border-color: hsl(243, 100%, 62%);
+}
+#prev {
+    float: left;
+    margin-left: 8vw;
+    color: hsl(229, 24%, 87%);
+    background-color: hsl(231, 100%, 99%);
+    border: none;
+    display: none;
+}
+#prev:hover, #prev:focus {
+    color: hsl(231, 11%, 63%);
+}
+#btns {
+    width: 85%;
+}
+
+
+.steps {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(4,1fr);
+    gap: 15px;
+    margin-top: 20vh;
+    margin-left: 55px;
+}
+
+.step-no {
+    text-align: center;
+    color:  hsl(217, 100%, 97%);
+    border: solid 1px  hsl(217, 100%, 97%);
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+.focus-step-no {
+    color: hsl(243, 100%, 62%);
+    background-color: hsl(231, 100%, 99%);
+}
+.step-desc > h4 {
+    color:  hsl(217, 100%, 97%);
+}
+
+.back-img {
+    background-image: url(assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tab {
+    display: none;
+    width: 70%;
+    margin: 7vh 8.5vw auto;
+}
+
+.tab > p {
+    margin-bottom: 4vh;
+}
+
+.form {
+    margin: 30px;
+    height: 85vh;
+    display: grid;
+    grid-template-rows: 9fr 1fr;
+}
+
+#plans {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+    height: 35vh;
+}
+#plans > button {
+    border-radius: 8px;
+    padding: 15px 18px;
+    color: hsl(213, 96%, 18%);
+    background-color: hsl(231, 100%, 99%);
+    border-color: hsl(229, 24%, 87%);
+}
+#plans > button:focus, #plans > button:hover {
+    background-color: hsl(217, 100%, 97%);
+    border-color: hsl(213, 96%, 18%);
+}
+#price-selected {
+    background-color: hsl(229, 24%, 87%);
+    border-color: hsl(243, 100%, 62%);
+}
+
+.price-img {
+    height: 45px;
+    width: 45px;
+    margin-bottom: 20px;
+}
+
+#check-step {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap: 15px;
+}
+
+.check-step-3 {
+    border: solid 1px hsl(229, 24%, 87%);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 0.6fr 3fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 15px;
+}
+.middle-of-addons {
+    justify-self: left;
+}
+.middle-of-addons > h3 {
+    color: hsl(213, 96%, 18%);
+}
+.addon-price {
+    color: hsl(243, 100%, 62%);
+}
+
+.check-step-3:focus, .check-step-3:hover {
+    border-color: hsl(243, 100%, 62%);
+    background-color: hsl(217, 100%, 97%);
+}
+
+#step-4 > div > h5 {
+    color: hsl(243, 100%, 62%);
+    font-size: 18px;
+}
+.total {
+    margin-bottom: auto;
+}
+.addon-price-final, .total-price, #plan-price {
+    text-align: right;
+    color: hsl(243, 100%, 62%);
+}
+.total-price {
+    font-weight: 700;
+}
+
+#step-5 {
+    text-align: center;
+    padding-top: 15vh;
+}
+#step-5 > img {
+    margin-bottom: 25px;
+}
+#step-5 > h1 {
+    color: hsl(213, 96%, 18%);
+    margin-bottom: 10px;
+}
+#step-5 > p {
+    width: 80%;
+    margin-left: 10%;
+}
