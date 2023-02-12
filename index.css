@@ -235,3 +235,65 @@ button:focus, button:hover {
     width: 80%;
     margin-left: 10%;
 }
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: hsl(217, 100%, 97%);
+    }
+
+    .form {
+        width: 85%;
+        gap: 25px;
+        height: auto;
+        margin-left: 8vw;
+        position: absolute;
+        top: 12vh;
+    }
+    .tab {
+        background-color: hsl(0, 0%, 100%);
+        width: 100%;
+        border-radius: 8px;
+        margin: 0;
+        padding: 3vh 5vw;
+    }
+
+    input {
+        width: 90%;
+        height: 34px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    main {
+        margin: 0;
+        height: 100vh;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 3fr;
+    }
+    .step-desc {
+        display: none;
+    }
+    .back-img {
+        background-image: url(assets/images/bg-sidebar-mobile.svg);
+        height: 22vh;
+    }
+    .steps {
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+        margin-left: 35vw;
+        margin-top: 8vh;
+    }
+    
+    #plans {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3,1fr);
+        height: auto;
+        gap: 15px;
+    }
+    
+    .price {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+}

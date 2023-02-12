@@ -20,7 +20,10 @@ $("#next").click(function () {
         }
         $(".total-price").text("$" + totalPrice + "/mo");
     }
-    
+    if (currentTab == 4) {
+        $("#next").css("display", "none");
+        $("#prev").css("display", "none");
+    }
 })
 
 $("#prev").click(function () {
@@ -108,10 +111,6 @@ function showTab(tab) {
     }
     else {
         $("#next").text("Next Step");
-    }
-    if (currentTab == 4) {
-        $("#next").css("display", "none");
-        $("#prev").css("display", "none");
     }
 }
 

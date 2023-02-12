@@ -1,3 +1,5 @@
+<!-- 2nd page (plan) make the inside of the buttons grid and align them like that -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +10,8 @@
     <title>Form</title>
     <!-- stylesheet -->
     <link rel="stylesheet" href="index.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
@@ -80,19 +84,31 @@
                     <div id="plans">
 
                         <button type="button" class="price" id="Arcade" onclick="priceRetriver('Arcade', 9)">
-                            <img src="assets/images/icon-arcade.svg" alt="" srcset="" class="price-img">
-                            <h3>Arcade</h3>
-                            <p>$9/mo</p>
+                            <div class="btn-inside-1">
+                                <img src="assets/images/icon-arcade.svg" alt="" srcset="" class="price-img">
+                            </div>
+                            <div class="btn-inside-2">
+                                <h3>Arcade</h3>
+                                <p>$9/mo</p>
+                            </div>
                         </button>
                         <button type="button" class="price" id="Advanced" onclick="priceRetriver('Advanced', 12)">
-                            <img src="assets/images/icon-advanced.svg" alt="" srcset="" class="price-img">
-                            <h3>Advanced</h3>
-                            <p>$12/mo</p>
+                            <div class="btn-inside-1">
+                                <img src="assets/images/icon-advanced.svg" alt="" srcset="" class="price-img">
+                            </div>
+                            <div class="btn-inside-2">
+                                <h3>Advanced</h3>
+                                <p>$12/mo</p>
+                            </div>
                         </button>
                         <button type="button" class="price" id="Pro" onclick="priceRetriver('Pro', 15)">
-                            <img src="assets/images/icon-pro.svg" alt="" srcset="" class="price-img">
-                            <h3>Pro</h3>
-                            <p>$15/mo</p>
+                            <div class="btn-inside-1">
+                                <img src="assets/images/icon-pro.svg" alt="" srcset="" class="price-img">
+                            </div>
+                            <div class="btn-inside-2">
+                                <h3>Pro</h3>
+                                <p>$15/mo</p>
+                            </div>
                         </button>
 
                     </div>
@@ -110,7 +126,8 @@
                         <div role="button" class="check-step-3" id="online-services">
 
                             <div>
-                                <input type="checkbox" name="online-services" class="add-checkbox" id="online-services-box">
+                                <input type="checkbox" name="online-services" class="add-checkbox"
+                                    id="online-services-box">
                             </div>
                             <div class="middle-of-addons">
                                 <h3>Online Services</h3>
@@ -122,9 +139,10 @@
 
                         </div>
                         <div role="button" class="check-step-3" id="larger-storage">
-                            
+
                             <div>
-                                <input type="checkbox" name="larger-storage" class="add-checkbox" id="larger-storage-box">
+                                <input type="checkbox" name="larger-storage" class="add-checkbox"
+                                    id="larger-storage-box">
                             </div>
                             <div class="middle-of-addons">
                                 <h3>Larger Storage</h3>
@@ -136,9 +154,10 @@
 
                         </div>
                         <div role="button" class="check-step-3" id="customisable-profile">
-                            
+
                             <div>
-                                <input type="checkbox" name="customisable-profile" class="add-checkbox" id="customisable-profile-box">
+                                <input type="checkbox" name="customisable-profile" class="add-checkbox"
+                                    id="customisable-profile-box">
                             </div>
                             <div class="middle-of-addons">
                                 <h3>Customisable Profile</h3>
@@ -182,7 +201,8 @@
                 <div class="tab" id="step-5">
                     <img src="assets/images/icon-thank-you.svg" alt="" srcset="">
                     <h1>Thank you!</h1>
-                    <p>Thanks for confirming your subscription! We hope you have fun usin our platform. If you ever need support, please feel free to email us at support@loremgaming.com</p>
+                    <p>Thanks for confirming your subscription! We hope you have fun usin our platform. If you ever need
+                        support, please feel free to email us at support@loremgaming.com</p>
                 </div>
             </form>
 
